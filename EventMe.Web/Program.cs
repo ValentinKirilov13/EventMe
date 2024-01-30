@@ -1,3 +1,5 @@
+using EventMe.Core.Contracts;
+using EventMe.Core.Services;
 using EventMe.Data.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -5,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IEventServices , EventServices>();
 
 // Add DbContext to the container.
 string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");

@@ -17,4 +17,8 @@
     <ProjectReference Include="..\EventMe.Core\EventMe.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Event\" />
+  </ItemGroup>
+
 </Project>
