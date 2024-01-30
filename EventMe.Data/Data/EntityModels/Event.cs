@@ -30,5 +30,9 @@ namespace EventMe.Data.Data.EntityModels
         [Required]
         [Comment("Place for event")]
         public required string Place { get; set; }
+
+        [Required]
+        [Comment("Active status")]
+        public bool IsDeleted { get; set; } = false;
     }
 }
