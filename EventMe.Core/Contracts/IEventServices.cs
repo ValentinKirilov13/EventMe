@@ -8,7 +8,7 @@ namespace EventMe.Core.Contracts
 
         Task AddAsync(EventViewModel model);
 
-        Task EditAsync(Guid id);
+        Task EditAsync(EventViewModel model);
 
         Task DeleteAsync(Guid id);
     }
