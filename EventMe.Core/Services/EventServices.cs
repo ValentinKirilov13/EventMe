@@ -63,16 +63,16 @@ namespace EventMe.Core.Services
         public async Task<EventViewModel> GetByIdAsync(Guid id)
         {
             return await context.Events
-                .Where (x => x.Id == id)
+                .Where(x => x.Id == id)
+                .AsNoTracking()
                 .Select(x => new EventViewModel() 
                 {
-                    Id= x.Id,
+                    Id = x.Id,
                     Name = x.Name,
                     Place = x.Place,
                     Start = x.Start,
                     End = x.End,
                 })
-                .AsNoTracking()
                 .FirstAsync();
         }
     }
