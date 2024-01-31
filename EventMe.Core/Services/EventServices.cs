@@ -39,16 +39,26 @@ namespace EventMe.Core.Services
             await context.SaveChangesAsync();
         }
 
-        public Task EditAsync(EventViewModel model)
+        public async Task EditAsync(EventViewModel model)
         {
-            throw new NotImplementedException();
+            var entityModel = await context.Events
+                .Where(x => x.Id == model.Id)
+                .FirstAsync();
+
+            entityModel.Id = model.Id;
+            entityModel.Name = model.Name;
+            entityModel.Place = model.Place;
+            entityModel.Start = model.Start;
+            entityModel.End = model.End;
+
+            await context.SaveChangesAsync();
         }
 
         public async Task<IEnumerable<EventViewModel>> GetAllAsync()
         {
             return await context.Events
                 .Where(x => x.IsDeleted == false)
-                .Select(x => new EventViewModel() 
+                .Select(x => new EventViewModel()
                 {
                     Id = x.Id,
                     Name = x.Name,
@@ -65,7 +75,7 @@ namespace EventMe.Core.Services
             return await context.Events
                 .Where(x => x.Id == id)
                 .AsNoTracking()
-                .Select(x => new EventViewModel() 
+                .Select(x => new EventViewModel()
                 {
                     Id = x.Id,
                     Name = x.Name,

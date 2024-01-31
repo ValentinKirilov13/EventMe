@@ -60,12 +60,6 @@ namespace EventMe.Web.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Edit(Guid id)
-        {
-            return View();
-        }
-
     
 
     }
