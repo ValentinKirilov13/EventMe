@@ -20,3 +20,35 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.lable{
+    font-weight:bold
+}
+
+#Mybox {
+    box-shadow: 31px 27px 91px -7px rgba(0,0,0,0.4);
+    margin-bottom: 10px;   
+}
+
+#Myname{
+    text-align:center;
+}
+
+.row {
+    display: flex;
+}
+
+.column1, .column2 {
+    flex: 50%;
+}
+
+.column2 {
+    text-align: end;
+}
+
+#MyformEdit {
+    margin-top:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
