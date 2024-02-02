@@ -6,6 +6,8 @@ namespace EventMe.Core.Contracts
     {
         Task<IEnumerable<EventViewModel>> GetAllAsync();
 
+        Task<EventViewModel> GetByIdAsync(Guid id);
+
         Task AddAsync(EventViewModel model);
 
         Task EditAsync(EventViewModel model);

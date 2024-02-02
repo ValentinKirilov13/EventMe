@@ -19,7 +19,7 @@
                         <p class="card-text">@item.Start</p>
                         <p class="card-text">@item.End</p>
                         <p class ="card-text">@item.Place</p>
-                        <a asp-controller="Event" asp-action="Edit" class="btn btn-warning btn-lg">Edit</a>
+                        <a asp-controller="Event" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-lg">Edit</a>
                         <form class="mt-2" asp-controller ="Event" asp-action="Delete" asp-route-id="@item.Id" method="post">
                             <button type="submit" class="btn btn-danger btn-lg"
                                     onclick="return confirm('Are you sure to delete event: @item.Name')">Delete</button>

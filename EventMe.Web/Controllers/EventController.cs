@@ -65,5 +65,20 @@ namespace EventMe.Web.Controllers
         {
             EventViewModel model = await eventServices.GetByIdAsync(id);
 
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(EventViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            await eventServices.EditAsync(model);
+
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
