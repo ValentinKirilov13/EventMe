@@ -60,7 +60,10 @@ namespace EventMe.Web.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-    
+        [HttpGet]
+        public async Task<IActionResult> Edit(Guid id)
+        {
+            EventViewModel model = await eventServices.GetByIdAsync(id);
 
     }
 }
