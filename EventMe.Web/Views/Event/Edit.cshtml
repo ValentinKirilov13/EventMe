@@ -5,28 +5,28 @@
 
 <form asp-controller="Event" asp-action="Edit" method="post">
     <input asp-for="Id" type="hidden" />
-    <div class="mb-3">
+    <h1>Edit Event</h1>
+    <div class="question">
+        <input asp-for="Name" type="text" required />
         <label asp-for="Name">Name</label>
-        <input asp-for="Name" />
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
-    <div class="mb-3">
+    <div class="question">
+        <input asp-for="Place" type="text" required />
         <label asp-for="Place">Place</label>
-        <input asp-for="Place" />
         <span asp-validation-for="Place" class="text-danger"></span>
     </div>
-    <div class="mb-3">
+    <div class="question">
+        <input asp-for="Start" type="datetime-local" />
         <label asp-for="Start">Start</label>
-        <input asp-for="Start.Date" />
         <span asp-validation-for="Start" class="text-danger"></span>
     </div>
-    <div class="mb-3">
+    <div class="question">
+        <input asp-for="End" type="datetime-local" />
         <label asp-for="End">End</label>
-        <input asp-for="End.Date" />
         <span asp-validation-for="End" class="text-danger"></span>
     </div>
-
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit">Submit</button>
 </form>
 
 
