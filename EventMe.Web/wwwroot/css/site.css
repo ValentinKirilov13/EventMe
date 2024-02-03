@@ -149,6 +149,7 @@ form {
         letter-spacing: 0.05em;
         position: relative;
         z-index: 1;
+        font-weight:bold;
     }
 
         form button:hover, form button:focus {
@@ -224,6 +225,7 @@ form {
             background: #b4e1f3;
             color: black;
             margin-top: 30px;
+            font-weight:bold;
         }
 
         form .question input[type="datetime-local"]:focus {
@@ -231,6 +233,7 @@ form {
             background: #b4e1f3;
             color: black;
             margin-top: 30px;
+            font-weight: bold;
         }
 
         form .question input[type="text"]:valid {
