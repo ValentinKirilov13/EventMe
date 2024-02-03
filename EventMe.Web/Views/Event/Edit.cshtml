@@ -4,30 +4,30 @@
 }
 <div class="d-flex justify-content-center">
     <form asp-controller="Event" asp-action="Edit" method="post" class="MyForm">
-    <input asp-for="Id" type="hidden" />
-    <h1>Edit Event</h1>
-    <div class="question">
-        <input asp-for="Name" type="text" required />
-        <label asp-for="Name">Name</label>
-        <span asp-validation-for="Name" class="text-danger"></span>
-    </div>
-    <div class="question">
-        <input asp-for="Place" type="text" required />
-        <label asp-for="Place">Place</label>
-        <span asp-validation-for="Place" class="text-danger"></span>
-    </div>
-    <div class="question">
-        <input asp-for="Start" type="datetime-local" />
-        <label asp-for="Start">Start</label>
-        <span asp-validation-for="Start" class="text-danger"></span>
-    </div>
-    <div class="question">
-        <input asp-for="End" type="datetime-local" />
-        <label asp-for="End">End</label>
-        <span asp-validation-for="End" class="text-danger"></span>
-    </div>
-    <button type="submit">Submit</button>
-</form>
+        <input asp-for="Id" type="hidden" />
+        <h1>Edit Event</h1>
+        <div class="question">
+            <input asp-for="Name" type="text" required />
+            <label asp-for="Name">Name</label>
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="question">
+            <input asp-for="Place" type="text" required />
+            <label asp-for="Place">Place</label>
+            <span asp-validation-for="Place" class="text-danger"></span>
+        </div>
+        <div class="question">
+            <input asp-for="Start" type="datetime-local" />
+            <label asp-for="Start">Start</label>
+            <span asp-validation-for="Start" class="text-danger"></span>
+        </div>
+        <div class="question">
+            <input asp-for="End" type="datetime-local" />
+            <label asp-for="End">End</label>
+            <span asp-validation-for="End" class="text-danger"></span>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
 </div>
 
 @section Scripts {

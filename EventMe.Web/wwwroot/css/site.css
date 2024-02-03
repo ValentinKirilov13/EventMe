@@ -49,6 +49,7 @@ body {
 }
 
 #MyformEdit {
+    margin-top:42px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -113,6 +114,7 @@ body {
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     box-shadow: 31px 27px 91px -7px rgba(0,0,0,0.4);
+    text-align: center;
 }
 
     form h1 {
