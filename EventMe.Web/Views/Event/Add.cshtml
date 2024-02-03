@@ -17,7 +17,7 @@
         <span asp-validation-for="Place" class="text-danger"></span>
     </div>
     <div class="question">
-        <input asp-for="Start" type="datetime-local" value=""/>
+            <input asp-for="Start" type="datetime-local" value="" />
         <label asp-for="Start">Start</label>
         <span asp-validation-for="Start" class="text-danger"></span>
     </div>
@@ -29,7 +29,6 @@
     <button type="submit">Submit</button>
 </form>
 
-
-@section Scripts{
+@section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }

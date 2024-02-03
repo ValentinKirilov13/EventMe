@@ -2,8 +2,8 @@
 @{
     ViewBag.Titel = "Edit Event";
 }
-
-<form asp-controller="Event" asp-action="Edit" method="post">
+<div class="d-flex justify-content-center">
+    <form asp-controller="Event" asp-action="Edit" method="post" class="MyForm">
     <input asp-for="Id" type="hidden" />
     <h1>Edit Event</h1>
     <div class="question">
@@ -28,7 +28,7 @@
     </div>
     <button type="submit">Submit</button>
 </form>
-
+</div>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

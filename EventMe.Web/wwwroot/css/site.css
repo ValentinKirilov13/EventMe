@@ -49,20 +49,10 @@ body {
 }
 
 #MyformEdit {
-    margin-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-#MyformDelete {
-    display: block;
-    margin: 0;
-    padding: 0;
-    border: none;
-    border-radius: 0px;
-    box-shadow: none;
-    display: block;
-}
 
 form span {
     margin-left: 10px;
@@ -107,11 +97,11 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-form {
+
+.MyForm {
     position: relative;
     display: inline-block;
-    max-width: 700px;
-    min-width: 500px;
+    min-width: 100%;
     box-sizing: border-box;
     padding: 30px 25px;
     background-color: white;
