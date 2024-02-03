@@ -136,8 +136,8 @@ form {
 
     form button {
         margin-top: 35px;
-        background-color: white;
-        border: 1px solid #515151;
+        background-color: #b4e1f3;
+        border: 0px solid #515151;
         line-height: 0;
         font-size: 17px;
         display: inline-block;
@@ -146,14 +146,14 @@ form {
         border-radius: 60px;
         color: black;
         font-weight: 100;
-        letter-spacing: 0.01em;
+        letter-spacing: 0.05em;
         position: relative;
         z-index: 1;
     }
 
         form button:hover, form button:focus {
             color: white;
-            background-color: #0091f7;
+            background-color: red;
         }
 
     form .question {
@@ -221,15 +221,15 @@ form {
 
         form .question input[type="text"]:focus {
             outline: none;
-            background: #0091f7;
-            color: white;
+            background: #b4e1f3;
+            color: black;
             margin-top: 30px;
         }
 
         form .question input[type="datetime-local"]:focus {
             outline: none;
-            background: #0091f7;
-            color: white;
+            background: #b4e1f3;
+            color: black;
             margin-top: 30px;
         }
 
