@@ -41,7 +41,7 @@ namespace EventMe.Core.Services
 
         public async Task EditAsync(EventViewModel model)
         {
-            var entityModel = await context.Events
+            Event entityModel = await context.Events
                 .Where(x => x.Id == model.Id)
                 .FirstAsync();
 
