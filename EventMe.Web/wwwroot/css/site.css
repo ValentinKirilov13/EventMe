@@ -74,6 +74,7 @@ body {
     font-weight: 100;
 }
 
+
 .card-title {
     font-weight: bold;
 }
@@ -284,8 +285,7 @@ body {
     align-items: center;
     font-size: 14px;
     text-decoration: none;
-    width: 500px;
-    margin: auto;
+    width: 100%;
 }
 
     .arrow-button > .arrow {
