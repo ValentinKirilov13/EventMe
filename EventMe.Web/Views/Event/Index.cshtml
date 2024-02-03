@@ -18,12 +18,15 @@
                 <div class="card" id="Mybox">
                     <div class="card-body">
                         <h3 class="card-title" id="Myname">@item.Name</h3>
+                        <div class="MyUnderline"></div>
                         <span class="lable">Date:</span>
                         <p class="card-text">@item.Start.ToLongDateString()</p>
                         <span class="lable">Time:</span>
                         <p class="card-text">@item.Start.ToString("hh:mm tt")</p>
                         <span class="lable">Finish at:</span>
                         <p class="card-text">@item.End.ToString("hh:mm tt")</p>
+                        <span class="lable">On:</span>
+                        <p class="card-text">@item.End.ToLongDateString()</p>
                         <span class="lable">Location:</span>
                         <p class="card-text">@item.Place</p>
                         <div class="row">

@@ -1,24 +1,24 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .lable {
@@ -27,7 +27,9 @@ body {
 
 #Mybox {
     box-shadow: 31px 27px 91px -7px rgba(0,0,0,0.4);
-    margin-bottom: 10px;   
+    margin-bottom: 10px;
+    border-radius: 50px;
+    padding: 10px;
 }
 
 #Myname {
@@ -52,3 +54,295 @@ body {
     padding-right: 20px;
 }
 
+#MyformDelete {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    display: block;
+}
+
+form span {
+    margin-left: 10px;
+    font: italic;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, white ,skyblue);
+}
+
+#MyHeader {
+    font-size: 100px;
+    font-weight:bold;
+}
+
+.text-center {
+    margin-top: 10%;
+    font-weight: bold;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.MyUnderline{
+    width:100%;
+    height:2px;
+    background-color:grey;
+    margin-bottom:20px;
+}
+
+.transition, form button, form .question label, form .question input[type="text"] {
+    -moz-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+    -o-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+    -webkit-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+    transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+}
+
+* {
+    font-family: Helvetica, sans-serif;
+    font-weight: light;
+    -webkit-font-smoothing: antialiased;
+}
+
+form {
+    position: relative;
+    display: inline-block;
+    max-width: 700px;
+    min-width: 500px;
+    box-sizing: border-box;
+    padding: 30px 25px;
+    background-color: white;
+    border-radius: 40px;
+    margin: 40px 0;
+    left: 50%;
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    box-shadow: 31px 27px 91px -7px rgba(0,0,0,0.4);
+}
+
+    form h1 {
+        font-weight: 100;
+        letter-spacing: 0.01em;
+        margin-left: 15px;
+        margin-bottom: 35px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    form button {
+        margin-top: 35px;
+        background-color: white;
+        border: 1px solid #515151;
+        line-height: 0;
+        font-size: 17px;
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 20px 15px;
+        border-radius: 60px;
+        color: black;
+        font-weight: 100;
+        letter-spacing: 0.01em;
+        position: relative;
+        z-index: 1;
+    }
+
+        form button:hover, form button:focus {
+            color: white;
+            background-color: #0091f7;
+        }
+
+    form .question {
+        position: relative;
+        padding: 10px 0;
+    }
+
+        form .question:first-of-type {
+            padding-top: 0;
+        }
+
+        form .question:last-of-type {
+            padding-bottom: 0;
+        }
+
+        form .question label {
+            transform-origin: left center;
+            color: black;
+            font-weight: 100;
+            letter-spacing: 0.01em;
+            font-size: 17px;
+            box-sizing: border-box;
+            padding: 10px 15px;
+            display: block;
+            position: absolute;
+            margin-top: -40px;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        form .question input[type="text"] {
+            appearance: none;
+            background-color: none;
+            border: 1px solid #515151;
+            line-height: 0;
+            font-size: 17px;
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            padding: 10px 15px;
+            border-radius: 60px;
+            color: black;
+            font-weight: 100;
+            letter-spacing: 0.01em;
+            position: relative;
+            z-index: 1;
+        }
+
+        form .question input[type="datetime-local"] {
+            appearance: none;
+            background-color: none;
+            border: 1px solid #515151;
+            font-size: 17px;
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            padding: 10px 15px;
+            border-radius: 60px;
+            color: black;
+            font-weight: 100;
+            letter-spacing: 0.01em;
+            position: relative;
+            z-index: 1;
+        }
+
+        form .question input[type="text"]:focus {
+            outline: none;
+            background: #0091f7;
+            color: white;
+            margin-top: 30px;
+        }
+
+        form .question input[type="datetime-local"]:focus {
+            outline: none;
+            background: #0091f7;
+            color: white;
+            margin-top: 30px;
+        }
+
+        form .question input[type="text"]:valid {
+            margin-top: 30px;
+        }
+
+        form .question input[type="datetime-local"]:valid {
+            margin-top: 30px;
+        }
+
+        form .question input[type="text"]:focus ~ label {
+            -moz-transform: translate(0, -35px);
+            -ms-transform: translate(0, -35px);
+            -webkit-transform: translate(0, -35px);
+            transform: translate(0, -35px);
+        }
+
+        form .question input[type="datetime-local"]:focus ~ label {
+            -moz-transform: translate(0, -35px);
+            -ms-transform: translate(0, -35px);
+            -webkit-transform: translate(0, -35px);
+            transform: translate(0, -35px);
+        }
+
+        form .question input[type="text"]:valid ~ label {
+            text-transform: uppercase;
+            font-style: italic;
+            -moz-transform: translate(5px, -35px) scale(0.6);
+            -ms-transform: translate(5px, -35px) scale(0.6);
+            -webkit-transform: translate(5px, -35px) scale(0.6);
+            transform: translate(5px, -35px) scale(1);
+        }
+
+        form .question input[type="datetime-local"]:valid ~ label {
+            text-transform: uppercase;
+            font-style: italic;
+            -moz-transform: translate(5px, -35px) scale(0.6);
+            -ms-transform: translate(5px, -35px) scale(0.6);
+            -webkit-transform: translate(5px, -35px) scale(0.6);
+            transform: translate(5px, -40px) scale(1);
+        }
+
+.navbar-brand{
+    font-weight:bold;
+}
+
+.arrow-button {
+    display: flex;
+    color: #C2FFE9;
+    background-color: #1758e6;
+    padding: 10px 16px;
+    border-radius: 20px;
+    transition: all .5s ease;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    font-size: 14px;
+    text-decoration: none;
+    width: 500px;
+    margin: auto;
+}
+
+    .arrow-button > .arrow {
+        width: 6px;
+        height: 6px;
+        border-right: 2px solid #C2FFE9;
+        border-bottom: 2px solid #C2FFE9;
+        position: relative;
+        transform: rotate(-45deg);
+        margin: 0 6px;
+        transition: all .5s ease;
+    }
+
+        .arrow-button > .arrow::before {
+            display: block;
+            background-color: currentColor;
+            width: 3px;
+            transform-origin: bottom right;
+            height: 2px;
+            position: absolute;
+            opacity: 0;
+            bottom: calc(-2px / 2);
+            transform: rotate(45deg);
+            transition: all .5s ease;
+            content: "";
+            right: 0;
+        }
+
+    .arrow-button:hover > .arrow {
+        transform: rotate(-45deg) translate(4px, 4px);
+        border-color: text-hover-color;
+    }
+
+        .arrow-button:hover > .arrow::before {
+            opacity: 1;
+            width: 10px;
+        }
+
+    .arrow-button:hover {
+        background-color: red;
+        color: #fff;
+    }
+
+#Myfooter{
+    background-color: #193047;
+}
+
+#Myfooter div{
+    color:white;
+    text-decoration:none;
+}
+
+#Myfooter a {
+    text-decoration: none;
+}
